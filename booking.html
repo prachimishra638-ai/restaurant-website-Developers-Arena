@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Reserve a table at Saffron & Stone.">
+  <title>Book a Table | Saffron & Stone</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navbar container" aria-label="Main navigation">
+      <a class="logo" href="index.html"><span>✦</span> Saffron & Stone</a>
+      <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="menu.html">Menu</a></li><li><a class="active" href="booking.html">Book a Table</a></li></ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero"><div class="container"><p class="eyebrow">RESERVATIONS</p><h1>Book a <span>Table</span></h1><p>Tell us when you would like to join us and we will take care of the rest.</p></div></section>
+
+    <section class="booking-section container">
+      <div class="booking-info">
+        <p class="eyebrow">PLAN YOUR VISIT</p><h2>Let's make it <span>special.</span></h2>
+        <p>For groups larger than 10 guests, please contact us directly. We also welcome celebrations and special occasions.</p>
+        <div class="contact-details"><div><b>Opening Hours</b><p>Monday – Sunday<br>12:00 PM – 11:00 PM</p></div><div><b>Call Us</b><p>+91 98765 43210</p></div><div><b>Find Us</b><p>24 Garden Avenue<br>New Delhi, India</p></div></div>
+      </div>
+
+      <form class="booking-form" id="bookingForm" novalidate>
+        <div class="form-row"><div class="form-group"><label for="name">Full Name *</label><input id="name" name="name" type="text" placeholder="Your name" required><small class="error"></small></div><div class="form-group"><label for="email">Email *</label><input id="email" name="email" type="email" placeholder="you@example.com" required><small class="error"></small></div></div>
+        <div class="form-row"><div class="form-group"><label for="phone">Phone *</label><input id="phone" name="phone" type="tel" placeholder="10-digit mobile number" required><small class="error"></small></div><div class="form-group"><label for="guests">Guests *</label><select id="guests" name="guests" required><option value="">Select</option><option>1</option><option>2</option><option>3</option><option>4</option><option>5</option><option>6+</option></select><small class="error"></small></div></div>
+        <div class="form-row"><div class="form-group"><label for="date">Date *</label><input id="date" name="date" type="date" required><small class="error"></small></div><div class="form-group"><label for="time">Time *</label><select id="time" name="time" required><option value="">Select time</option><option>12:30 PM</option><option>1:30 PM</option><option>2:30 PM</option><option>7:00 PM</option><option>8:00 PM</option><option>9:00 PM</option><option>10:00 PM</option></select><small class="error"></small></div></div>
+        <div class="form-group"><label for="message">Special Request</label><textarea id="message" name="message" rows="4" placeholder="Birthday, anniversary, dietary request, etc."></textarea></div>
+        <button class="btn btn-primary full" type="submit">Confirm Reservation</button>
+        <p class="form-note">This demo form validates your details locally. No real booking is processed.</p>
+        <div class="success-message" id="successMessage" role="status" aria-live="polite"></div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-grid"><div><a class="logo" href="index.html"><span>✦</span> Saffron & Stone</a><p>Modern Indian dining with a soulful touch.</p></div><div><h4>Visit</h4><p>24 Garden Avenue<br>New Delhi, India</p></div><div><h4>Hours</h4><p>Mon–Sun<br>12:00 PM – 11:00 PM</p></div><div><h4>Contact</h4><p>+91 98765 43210<br>hello@saffronstone.com</p></div></div><div class="copyright">© <span id="year"></span> Saffron & Stone. Internship Project.</div></footer>
+</body>
+</html>
